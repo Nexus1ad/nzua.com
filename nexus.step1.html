@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step1</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        font: bold 12pt arial;
+        color: burlywood;
+        display: flex;
+        border: 0;
+    }
+    form{
+        width: 300px;
+        margin: 200px auto;
+        text-align: center;
+    }
+    input{
+        display: block;
+        margin: 10px auto;
+        width: 250px;
+        height: 30px;
+    }
+    form{
+        width: 40vw -4vw;
+        height: 29vh;
+        background-color: antiquewhite;
+        border-radius: 12px 10px;
+        box-shadow: 12px 10px 50px antiquewhite;
+        align-content: center;
+    }
+    input#txdt{
+        border-radius: 12px 0px;
+    }
+    input#txdt1{
+        border-radius: 0px 12px;
+    }
+    input#txdt2{
+        border-radius: 12px 12px;
+    }
+</style>
+<body>
+    <form>
+        <h3>LOGIN</h3>
+        <input type="text" name="txdt" id="txdt" placeholder="ID">
+        <input type="password" name="txdt1" id="txdt1" placeholder="Password">
+        <input type="submit" id="txdt2" onclick="entrar(); return false">
+    </form>
+    <script>
+        function entrar() {
+            var a1 = window.document.getElementById('txdt').value
+            var a2 = window.document.getElementById('txdt1').value
+
+            if (a1 == "Admin" && a2 == "Admin") {
+                alert('Sucesso')
+                location.href = 'nexus.step2.html'
+            }
+            else {
+                alert('Usuário ou senha incorrecta!!!')
+            }
+        }
+    </script>
+</body>
+</html>

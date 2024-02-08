@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nexus.css">
+    <title>NEXUS INTELECTUAL</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    body{
+        margin: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: aqua;
+        color: rgb(41, 24, 1);
+        text-overflow: ellipsis;
+        text-align: center;
+        font-size: 15pt;
+    }
+    input{
+        width: fit-content;
+        box-shadow: 10px;
+        color: antiquewhite;
+        background-color: rgb(23, 82, 87);  
+        font-size: 13pt;
+        border-radius: 12px 0px;
+    }
+    input#txdt{
+        width: 100px;
+        background-color: rgb(230, 196, 149);
+        color: rgb(23, 82, 87);
+        border-radius: 0px 12px;
+    }   
+    .dada{
+        width: 30vw;
+        border-radius: 10px;
+        mask-image: -moz-radial-gradient(10, 20, 10);
+        
+    }
+    div#a1{
+        background-color: rgba(28, 73, 62, 0.366);
+        width: 50vw;
+        margin-left: 25%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border-color: rgb(33, 112, 202);
+    }
+    input#kiki{
+        align-content: end;
+    }
+</style>
+<body id="kaka">
+    <h1>ADMISSÃO PARA O <strong>NEXUS INTELECTUAL GROUP</strong></h1>
+    <div id="a1">
+        <img src="pexel.png" class= "dada" alt="animacoa">   
+    </div>
+    Média Global: <input type="number" name="txdt" id="txdt">
+    <input type="button" value="Verificar" onclick="Calcular(); return false" id="keke">
+    <input type="button" value="seguinte" onclick="Clicar()" id="kiki">
+    <div id="res">
+
+    </div>
+
+    <script>
+        //var nome = window.prompt('Qual é o seu nome?')
+        //window.alert(`Ora Viva, Sr. ${nome}!! Seja muito Bem vindo a nossa pagina de Admissões`)
+        //document.write(`Sr. ${nome}, insira os dados exigidos`)
+        function Calcular() {
+            var a1 = window.document.getElementById('txdt')
+            var a2 = window.document.getElementById('res')
+            var edit = window.document.getElementById('kaka')
+            var edit1 = window.document.getElementById('txdt')
+            edit.style.backgroundColor = 'black'
+            edit.style.color = 'white'
+            edit1.style.color = 'black'
+            edit1.style.backgroundColor = 'white'
+            var vel = Number(txdt.value)
+            res.innerHTML = `<p> De acordo com os dados inseridos a tua média é: <strong>${vel}</strong > valores</p>`
+                if (vel > 20) {
+                    res.innerHTML += '<p><strong>DADO INVÁLIDO</strong></p>'
+                }
+                else {                  
+                    if (vel <= 10) {
+                        res.innerHTML += '<P>É com enorme tristeza que o informamos, infelizmente <strong>não</strong> foi admitido</P>'
+                    }
+
+                    else  {
+                    alert('Processando...')
+                    res.innerHTML += '<P>Muitos Parabéns!!! É com enorme felicidade, que o Congratulamos!!! <strong>FOI ADMITIDO!!</strong></P>'
+                    res.innerHTML += '<p>Em seguida receberá um link, que o encaminhará para o <strong>NEXUS INTELECTUAL GROUP</srong></p>'
+                    res.innerHTML += '<p>Credenciais. ID: <strong>Admin</strong> Password: <strong>Admin</strong></p>'
+                    }
+                }
+            }
+        function Clicar() {
+            location.href = 'nexus.step1.html' 
+            edit.style.backgroundColor = 'black'
+            edit.style.font = 'bold 12pt arial'
+            edit.style.color = 'burlywood'
+        }
+    </script>
+</body>
+</html>

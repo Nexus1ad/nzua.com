@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+}
+body{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    color: rgb(41, 24, 1);
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 15pt;
+}
+input{
+    width: fit-content;
+    box-shadow: 10px;
+    color: antiquewhite;
+    background-color: rgb(23, 82, 87);  
+    font-size: 13pt;
+    border-radius: 12px 0px;
+}
+input#txdt{
+    width: 100px;
+    background-color: rgb(230, 196, 149);
+    color: rgb(23, 82, 87);
+    border-radius: 0px 12px;
+}   
+.dada{
+    width: 30vw
+    
+}
+div#a1{
+    background-color: rgba(28, 73, 62, 0.366);
+    width: 50vw;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color: rgb(33, 112, 202);
+}
